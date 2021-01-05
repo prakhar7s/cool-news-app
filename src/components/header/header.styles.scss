@@ -1,0 +1,19 @@
+.header {
+  background: linear-gradient(90deg, #f75964 0%, #f99468 100%);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+  .main-heading {
+    font-weight: 500;
+  }
+
+  .heading2 {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}

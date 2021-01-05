@@ -1,0 +1,51 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f6f7;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    background: white;
+    background: linear-gradient(90deg, #40bff6 0%, #6e66e0 100%);
+    padding: 15px 45px;
+    outline: none;
+    margin: 40px;
+    border-width: 0;
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+
+    .navigation {
+      width: 20%;
+      transition: width 1s;
+      overflow: hidden;
+    }
+
+    .cards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      column-gap: 50px;
+      row-gap: 70px;
+      padding: 20px;
+
+      .loading {
+        height: 80vh;
+        color: black;
+        font-size: 25px;
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+  }
+}
