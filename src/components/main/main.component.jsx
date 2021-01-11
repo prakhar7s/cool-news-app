@@ -37,11 +37,11 @@ const Main = () => {
   return (
     <main className="main">
       <button onClick={showOrHideNav}>
-        {navWidth === "0%" ? " Show Navbar " : " Hide Navbar "}
+        {navWidth === "0%" ? " Show Navigation " : " Hide Navigation "}
       </button>
       <div className="container">
         <div className="navigation" style={{ width: navWidth }}>
-          <h1>Filters</h1>
+          <h1>Navigation Section</h1>
         </div>
         <div className="cards">
           {articles.length ? (
@@ -49,7 +49,7 @@ const Main = () => {
               <Card key={article.author} {...article} />
             ))
           ) : (
-            <div className="loading">News is in its way. Please Wait!</div>
+            <div className="loading"></div>
           )}
         </div>
       </div>

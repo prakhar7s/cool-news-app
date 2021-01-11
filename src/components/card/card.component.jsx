@@ -12,7 +12,7 @@ const Card = (article) => {
       </div>
       <h1 className="title">{title}</h1>
       <h3 className="author">{author}</h3>
-      <p className="published-at">{publishedAt}</p>
+      <p className="published-at">{new Date(publishedAt).toLocaleString()}</p>
     </div>
   );
 };
