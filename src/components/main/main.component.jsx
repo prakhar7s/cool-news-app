@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../card/card.component";
+import { sampleNews } from "../main/sample-data";
 
 import "./main.styles.scss";
 
@@ -17,21 +18,28 @@ const Main = () => {
   }
 
   useEffect(() => {
-    var url =
-      "http://newsapi.org/v2/top-headlines?" +
-      "country=us&" +
-      "apiKey=8c12511b28654a3088de7b53c4235a28";
-    var req = new Request(url);
-    fetch(req)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(({ articles }) => {
-        console.log(articles);
-        setInterval(() => {
-          setArticles(articles);
-        }, 10000);
-      });
+    if (window.location.href.includes("localhost") === true) {
+      var url =
+        "http://newsapi.org/v2/top-headlines?" +
+        "country=us&" +
+        "apiKey=8c12511b28654a3088de7b53c4235a28";
+      var req = new Request(url);
+      fetch(req)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(({ articles }) => {
+          setInterval(() => {
+            console.log(articles);
+            setArticles(articles);
+          }, 1000);
+        })
+        .catch((err) => {
+          window.confirm("Data not fetched from API. Use sample news?");
+        });
+    } else {
+      setArticles(sampleNews);
+    }
   }, []);
 
   return (
