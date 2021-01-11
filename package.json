@@ -2,7 +2,7 @@
   "name": "simple-home-page",
   "version": "0.1.0",
   "private": true,
-  "hompage": "https://prakhar7s.github.io/cool-news-app/",
+  "homepage": "https://prakhar7s.github.io/cool-news-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
