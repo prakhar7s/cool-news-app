@@ -5,6 +5,7 @@ import "./card.styles.scss";
 const Card = (article) => {
   const { urlToImage, title, author, publishedAt } = article;
 
+  if (author === null) return null;
   return (
     <div className="card">
       <div className="img">

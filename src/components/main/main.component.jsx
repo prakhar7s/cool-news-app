@@ -6,19 +6,21 @@ import "./main.styles.scss";
 
 const Main = () => {
   const [navWidth, setNavWidth] = useState("20%");
+  const [navTransform, setNavTransform] = useState("0px");
   const [articles, setArticles] = useState([]);
 
   function showOrHideNav() {
-    console.log(navWidth, navWidth === "0%");
     if (navWidth === "0%") {
       setNavWidth("20%");
+      setNavTransform("0px");
     } else {
       setNavWidth("0%");
+      setNavTransform("-500px");
     }
   }
-
+  // window.location.href.includes("localhost") ===
   useEffect(() => {
-    if (window.location.href.includes("localhost") === true) {
+    if (true) {
       var url =
         "http://newsapi.org/v2/top-headlines?" +
         "country=us&" +
@@ -29,18 +31,15 @@ const Main = () => {
           return response.json();
         })
         .then(({ articles }) => {
-          setInterval(() => {
-            console.log(articles);
-            setArticles(articles);
-          }, 1000);
+          setArticles(articles);
         })
         .catch((err) => {
           window.confirm("Data not fetched from API. Use sample news?");
         });
     } else {
-      setArticles(sampleNews);
+      // setArticles(sampleNews);
     }
-  }, []);
+  }, [setArticles]);
 
   return (
     <main className="main">
@@ -48,14 +47,15 @@ const Main = () => {
         {navWidth === "0%" ? " Show Navigation " : " Hide Navigation "}
       </button>
       <div className="container">
-        <div className="navigation" style={{ width: navWidth }}>
-          <h1>Navigation Section</h1>
+        <div
+          className="navigation"
+          style={{ width: navWidth, transform: `translateX(${navTransform})` }}
+        >
+          {/* <h1>Navigation Section</h1> */}
         </div>
         <div className="cards">
           {articles.length ? (
-            articles.map((article) => (
-              <Card key={article.author} {...article} />
-            ))
+            articles.map((article) => <Card key={article.title} {...article} />)
           ) : (
             <div className="loading"></div>
           )}

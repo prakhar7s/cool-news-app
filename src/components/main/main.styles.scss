@@ -25,7 +25,7 @@
 
     .navigation {
       width: 20%;
-      transition: width 1s;
+      transition: all 1s;
       overflow: hidden;
       border: 1px solid rgba(0, 0, 0, 0.05);
       margin: 20px;
@@ -40,6 +40,7 @@
       column-gap: 50px;
       row-gap: 70px;
       padding: 20px;
+      place-items: center;
 
       .loading {
         height: 80vh;
@@ -75,6 +76,30 @@
             transform: rotate(1turn);
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    button {
+      margin: 35px 0;
+      margin-left: 35px;
+      background-color: red;
+    }
+
+    .container {
+      flex-direction: column;
+
+      .navigation {
+        min-height: 300px;
+        min-width: 60%;
+        background-color: rgba(255, 0, 0, 0.226);
+        margin-left: 100px;
+      }
+      .cards {
+        padding: 0;
       }
     }
   }
