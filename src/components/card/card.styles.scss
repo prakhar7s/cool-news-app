@@ -1,13 +1,22 @@
 .card {
-  min-height: 400px;
+  width: 280px;
+  min-height: 350px;
+  margin: 15px 10px;
   background-color: white;
-  box-shadow: 0 2px 14px 0 rgba(47, 60, 83, 0.16);
-  border-radius: 15px;
-  border: 2px solid rgba(0, 0, 0, 0.11);
+  box-shadow: 0 0px 20px 0 rgba(4, 96, 255, 0.25);
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: rgba(53, 14, 90, 0.9);
+  }
 
   .img {
     width: 100%;
-    height: 200px;
+    height: 180px;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -15,13 +24,19 @@
       background-position: center;
       background-size: cover;
       border-radius: 10px 10px 0 0;
+      transition: transform 0.4s ease;
+      overflow: hidden;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
   .title,
   .author,
   .published-at {
-    margin: 20px;
+    margin: 14px 20px;
   }
 
   .title {
@@ -29,7 +44,16 @@
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
     font-weight: 700;
+
+    //to stop overflow
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    height: 62px;
   }
 
   .author {
@@ -39,14 +63,6 @@
   }
 
   .published-at {
-    font-size: 20px;
-  }
-}
-@media (max-width: 550px) {
-  .cards {
-    padding: 0;
-  }
-  .card {
-    width: 350px;
+    font-size: 16px;
   }
 }

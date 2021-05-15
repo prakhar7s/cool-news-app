@@ -5,10 +5,10 @@ import "./footer.styles.scss";
 const Footer = () => (
   <footer className="footer">
     <div className="links">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
+      <a href="#s">Facebook</a>
+      <a href="#s">Instagram</a>
+      <a href="#s">Twitter</a>
+      <a href="#s">LinkedIn</a>
     </div>
   </footer>
 );

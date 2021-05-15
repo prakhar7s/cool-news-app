@@ -3,8 +3,11 @@
 *::after {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
+html,
 body {
-  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }

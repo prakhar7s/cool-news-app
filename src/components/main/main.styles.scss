@@ -35,72 +35,38 @@
 
     .cards {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      column-gap: 50px;
-      row-gap: 70px;
-      padding: 20px;
-      place-items: center;
-
-      .loading {
-        height: 80vh;
-        color: black;
-        font-size: 25px;
-        width: 70vw;
-        position: relative;
-
-        &::after {
-          content: "Loading News!";
-          position: absolute;
-          top: 150px;
-          left: 300px;
-          color: rgba(0, 0, 0, 0.5);
-        }
-
-        &::before {
-          content: "";
-          position: absolute;
-          width: 30px;
-          height: 30px;
-          top: 80px;
-          left: 360px;
-          border-radius: 50%;
-          border: 3px solid transparent;
-          border-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.616)
-            rgba(0, 0, 0, 0.9) black;
-          animation: rotate 0.4s linear infinite;
-        }
-
-        @keyframes rotate {
-          100% {
-            transform: rotate(1turn);
-          }
-        }
-      }
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
     }
   }
 }
 
-@media (max-width: 550px) {
-  .main {
-    button {
-      margin: 35px 0;
-      margin-left: 35px;
-      background-color: red;
-    }
-
-    .container {
-      flex-direction: column;
-
-      .navigation {
-        min-height: 300px;
-        min-width: 60%;
-        background-color: rgba(255, 0, 0, 0.226);
-        margin-left: 100px;
-      }
-      .cards {
-        padding: 0;
-      }
-    }
-  }
+@media only screen and (max-width: 500px) {
 }
+
+// @media (max-width: 550px) {
+//   .main {
+//     button {
+//       margin: 35px 0;
+//       margin-left: 35px;
+//       background-color: red;
+//     }
+
+//     .container {
+//       flex-direction: column;
+
+//       .navigation {
+//         min-height: 300px;
+//         min-width: 60%;
+//         background-color: rgba(255, 0, 0, 0.226);
+//         margin-left: 100px;
+//       }
+//       .cards {
+//         padding: 0;
+//       }
+//     }
+//   }
+// }
