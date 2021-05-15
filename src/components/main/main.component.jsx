@@ -22,7 +22,7 @@ const Main = () => {
   useEffect(() => {
     if (true) {
       var url =
-        "http://newsapi.org/v2/top-headlines?" +
+        "https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?" +
         "country=us&" +
         "apiKey=8c12511b28654a3088de7b53c4235a28";
       var req = new Request(url);
