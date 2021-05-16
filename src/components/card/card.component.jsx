@@ -2,6 +2,9 @@ import React from "react";
 
 import "./card.styles.scss";
 
+// default image
+import defaultImage from "../../assets/default-image.jpg";
+
 const Card = (article) => {
   const { url, urlToImage, title, author, publishedAt } = article;
 
@@ -9,7 +12,7 @@ const Card = (article) => {
   return (
     <a href={url} target="blank" className="card">
       <div className="img">
-        <img src={urlToImage} alt="article" />
+        <img src={urlToImage || defaultImage} alt="article" />
       </div>
       <h1 className="title">{title}</h1>
       <h3 className="author">{author}</h3>
