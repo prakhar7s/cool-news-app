@@ -3,6 +3,8 @@ import Footer from "../../components/footer/footer.component";
 import Header from "../../components/header/header.component";
 import Main from "../../components/main/main.component";
 
+import "./Home.scss";
+
 const Home = () => (
   <div className="home">
     <Header />

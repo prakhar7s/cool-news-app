@@ -3,28 +3,17 @@ import React, { useEffect, useState } from "react";
 import Card from "../card/card.component";
 import Loader from "../Loader/Loader";
 import { sampleNews } from "../main/sample-data";
+import NavigationBar from "../navigation-bar/NavigationBar";
 
 import "./main.styles.scss";
 
 const Main = () => {
-  const [navWidth, setNavWidth] = useState("20%");
-  const [navTransform, setNavTransform] = useState("0px");
   const [articles, setArticles] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
-  function showOrHideNav() {
-    if (navWidth === "0%") {
-      setNavWidth("20%");
-      setNavTransform("0px");
-    } else {
-      setNavWidth("0%");
-      setNavTransform("-500px");
-    }
-  }
-
   useEffect(() => {
     const { REACT_APP_NEWS_API_KEY } = process.env;
-    var url = `http://newsapi.org/v2/top-headlines?country=us&apiKey=${REACT_APP_NEWS_API_KEY}`;
+    var url = `https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=us&apiKey=${REACT_APP_NEWS_API_KEY}`;
 
     async function fetchData() {
       // You can await here
@@ -55,17 +44,8 @@ const Main = () => {
 
   return (
     <main className="main">
-      {/* <button onClick={showOrHideNav}>
-        {navWidth === "0%" ? " Show Navigation " : " Hide Navigation "}
-      </button> */}
+      <NavigationBar />
       <div className="container">
-        {/* <div
-          className="navigation"
-          style={{ width: navWidth, transform: `translateX(${navTransform})` }}
-        >
-          <h1>Navigation Section</h1>
-        </div> */}
-
         {!isLoading ? (
           <div className="cards">
             {articles.map((article) => (

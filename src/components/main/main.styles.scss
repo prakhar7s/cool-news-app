@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
 
+  // YET TO USE
   button {
     background: white;
     background: linear-gradient(90deg, #40bff6 0%, #6e66e0 100%);
@@ -20,26 +21,19 @@
   }
 
   .container {
-    display: flex;
     width: 100%;
 
-    .navigation {
-      width: 20%;
-      transition: all 1s;
-      overflow: hidden;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      margin: 20px;
-      text-align: center;
-      font-size: 10px;
-    }
-
     .cards {
-      width: 100%;
+      width: 94%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      padding: 20px 0;
+      padding: 20px;
+
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+      }
     }
   }
 }
