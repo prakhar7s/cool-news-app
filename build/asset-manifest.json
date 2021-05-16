@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cool-news-app/static/css/main.7b818051.chunk.css",
+    "main.js": "/cool-news-app/static/js/main.cba61a6e.chunk.js",
+    "main.js.map": "/cool-news-app/static/js/main.cba61a6e.chunk.js.map",
+    "runtime-main.js": "/cool-news-app/static/js/runtime-main.42c75f9b.js",
+    "runtime-main.js.map": "/cool-news-app/static/js/runtime-main.42c75f9b.js.map",
+    "static/js/2.4441ec8a.chunk.js": "/cool-news-app/static/js/2.4441ec8a.chunk.js",
+    "static/js/2.4441ec8a.chunk.js.map": "/cool-news-app/static/js/2.4441ec8a.chunk.js.map",
+    "static/js/3.b84a04d0.chunk.js": "/cool-news-app/static/js/3.b84a04d0.chunk.js",
+    "static/js/3.b84a04d0.chunk.js.map": "/cool-news-app/static/js/3.b84a04d0.chunk.js.map",
+    "index.html": "/cool-news-app/index.html",
+    "static/css/main.7b818051.chunk.css.map": "/cool-news-app/static/css/main.7b818051.chunk.css.map",
+    "static/js/2.4441ec8a.chunk.js.LICENSE.txt": "/cool-news-app/static/js/2.4441ec8a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42c75f9b.js",
+    "static/js/2.4441ec8a.chunk.js",
+    "static/css/main.7b818051.chunk.css",
+    "static/js/main.cba61a6e.chunk.js"
+  ]
+}
