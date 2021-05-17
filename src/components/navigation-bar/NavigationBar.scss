@@ -70,15 +70,34 @@
     .link-item {
       display: flex;
       align-items: center;
-      padding: 20px 0;
+      padding: 10px 0;
+      margin: 12px 0;
       overflow: hidden;
+      text-decoration: none;
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
-      &:not(:last-child) {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      &.active-nav-link {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.2);
+          border-left: 3px solid rgba(27, 238, 38, 1);
+          border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+          @media only screen and (max-width: 680px) {
+            border-bottom: 3px solid rgba(27, 238, 38, 1);
+            border-left: none;
+          }
+        }
       }
 
       &:hover {
-        background: rgba(255, 255, 255, 0.1);
+        // background: rgba(255, 255, 255, 0.1);
         cursor: pointer;
       }
 

@@ -2,8 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "../card/card.component";
 import Loader from "../Loader/Loader";
-import { sampleNews } from "../main/sample-data";
-import NavigationBar from "../navigation-bar/NavigationBar";
+import { sampleNews } from "../../assets/sample-data";
 
 import "./main.styles.scss";
 
@@ -44,7 +43,6 @@ const Main = () => {
 
   return (
     <main className="main">
-      <NavigationBar />
       <div className="container">
         {!isLoading ? (
           <div className="cards">
