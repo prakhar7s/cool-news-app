@@ -24,7 +24,7 @@ const SavedNews = () => {
 
       // filter saved news for all news
       const savedNewsData = sampleNews
-        .map((n) => (news[n.source.name] ? n : false))
+        .filter((n) => (news[n.publishedAt] ? true : false))
         .filter(Boolean);
 
       setSavedNews(savedNewsData);
@@ -42,11 +42,19 @@ const SavedNews = () => {
         {!isLoading ? (
           <div className="cards">
             {savedNews.map((article) => (
-              <Card key={article.title} {...article} />
+              <Card
+                key={article.title}
+                article={article}
+                savedNews={savedNews}
+                setSavedNews={setSavedNews}
+              />
             ))}
           </div>
         ) : (
           <Loader />
+        )}
+        {!isLoading && savedNews.length === 0 && (
+          <div className="no-news">No Saved News :)</div>
         )}
       </div>
     </div>

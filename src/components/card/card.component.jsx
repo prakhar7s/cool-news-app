@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./card.styles.scss";
 
@@ -8,36 +8,43 @@ import defaultImage from "../../assets/default-image.jpg";
 // icons
 import TurnedInTwoToneIcon from "@material-ui/icons/TurnedInTwoTone";
 
-const Card = (article) => {
-  const { url, urlToImage, title, author, publishedAt, source } = article;
+const Card = ({ article, savedNews, setSavedNews }) => {
+  const { url, urlToImage, title, author, publishedAt } = article;
   const [isSaved, setSaved] = useState(false);
 
+  const fetchFromLocal = (itemName) => {
+    const newsID = publishedAt;
+    var savedNewsCache = localStorage.getItem(itemName);
+
+    savedNewsCache = savedNewsCache != null ? JSON.parse(savedNewsCache) : [];
+    const filteredCache = savedNewsCache.filter((id) => id !== newsID);
+
+    const isNewsIDPresent = filteredCache.length !== savedNewsCache.length;
+
+    return { filteredCache, savedNewsCache, isNewsIDPresent };
+  };
+
+  useEffect(() => {
+    const { isNewsIDPresent } = fetchFromLocal("savedNewsIDs");
+    setSaved(isNewsIDPresent);
+  }, []);
+
   const saveNews = () => {
-    const newsID = source.name;
-    const savedNewsCache = localStorage.getItem("savedNewsIDs");
+    const newsID = publishedAt;
+    const { filteredCache, isNewsIDPresent } = fetchFromLocal("savedNewsIDs");
 
-    if (savedNewsCache !== null) {
-      const parsedCache = JSON.parse(savedNewsCache);
-
-      // Check whether newsID is present or not
-      const filteredCache = parsedCache.filter((id) => id !== newsID);
-      console.log(filteredCache);
-
-      // not present so add that ID
-      if (filteredCache.length === parsedCache.length) {
-        filteredCache.push(newsID);
-        setSaved(true);
-      } else {
-        //it is present so remove that
-        setSaved(false);
-      }
-
-      localStorage.setItem("savedNewsIDs", JSON.stringify([...filteredCache]));
+    // Check whether newsID is present or not
+    // if present so add that ID
+    if (!isNewsIDPresent) {
+      filteredCache.push(newsID);
+      setSaved(true);
     } else {
-      localStorage.setItem("savedNewsIDs", JSON.stringify([newsID]));
+      //it is present so remove that
+      setSaved(false);
+      setSavedNews(savedNews.filter((sn) => sn.publishedAt !== newsID));
     }
 
-    console.log(localStorage.getItem("savedNewsIDs"));
+    localStorage.setItem("savedNewsIDs", JSON.stringify([...filteredCache]));
   };
 
   if (author === null) return null;

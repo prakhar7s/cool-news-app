@@ -47,7 +47,7 @@ const Main = () => {
         {!isLoading ? (
           <div className="cards">
             {articles.map((article) => (
-              <Card key={article.title} {...article} />
+              <Card key={article.title} article={article} />
             ))}
           </div>
         ) : (
