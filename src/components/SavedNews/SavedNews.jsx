@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import "./SavedNews.scss";
 
 import { sampleNews } from "../../assets/sample-data";
 import Loader from "../Loader/Loader";
 import Card from "../card/card.component";
+import { MyContext } from "../../MyContext";
 
 const SavedNews = () => {
-  const [savedNews, setSavedNews] = useState([]);
+  const value = useContext(MyContext);
+  const [savedNews, setSavedNews] = useState(value.state.filteredArticles);
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log(value);
     // saved newd IDs
     const savedNewsCache = localStorage.getItem("savedNewsIDs");
 
@@ -37,27 +40,31 @@ const SavedNews = () => {
   }, []);
 
   return (
-    <div className="saved-news">
-      <div className="container">
-        {!isLoading ? (
-          <div className="cards">
-            {savedNews.map((article) => (
-              <Card
-                key={article.title}
-                article={article}
-                savedNews={savedNews}
-                setSavedNews={setSavedNews}
-              />
-            ))}
+    <MyContext.Consumer>
+      {(value) => (
+        <div className="saved-news">
+          <div className="container">
+            {!isLoading ? (
+              <div className="cards">
+                {value.state.filteredArticles.map((article) => (
+                  <Card
+                    key={article.title}
+                    article={article}
+                    savedNews={savedNews}
+                    setSavedNews={setSavedNews}
+                  />
+                ))}
+              </div>
+            ) : (
+              <Loader />
+            )}
+            {!isLoading && savedNews.length === 0 && (
+              <div className="no-news">No Saved News :)</div>
+            )}
           </div>
-        ) : (
-          <Loader />
-        )}
-        {!isLoading && savedNews.length === 0 && (
-          <div className="no-news">No Saved News :)</div>
-        )}
-      </div>
-    </div>
+        </div>
+      )}
+    </MyContext.Consumer>
   );
 };
 

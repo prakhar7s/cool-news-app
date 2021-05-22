@@ -1,11 +1,14 @@
 import "./App.css";
+import MyProvider from "./MyContext";
 import Home from "./pages/home/home.page";
 
 function App() {
   return (
-    <div className="app">
-      <Home />
-    </div>
+    <MyProvider>
+      <div className="app">
+        <Home />
+      </div>
+    </MyProvider>
   );
 }
 

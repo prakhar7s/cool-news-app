@@ -546,4 +546,278 @@ export const sampleNews = [
     content:
       'Former Apple ads engineer Antonio Garcia Martinez said Apple was "well aware" of his writing before it hired him, and accused the company of defamation in its recent statement regarding his firing.\r\n… [+2006 chars]',
   },
+  {
+    source: { id: null, name: "Www.https" },
+    author: "New York Post",
+    title:
+      "Shanna Moakler accuses ex Travis Barker, Kourtney Kardashian of ‘destroying my family’ - Fox News",
+    description:
+      "Shanna Moakler is putting ex-husband Travis Barker and new girlfriend, Kourtney Kardashian through the wringer, accusing the couple of destroying her relationship with her children.",
+    url: "https://www.https://pagesix.com/2021/05/22/shanna-moakler-accuses-ex-travis-barker-and-kourtney-kardashian-of-destroying-my-family/",
+    urlToImage:
+      "https://static.foxnews.com/foxnews.com/content/uploads/2021/05/GettyImages-451465555.jpg",
+    publishedAt: "2021-05-22T18:02:28Z",
+    content:
+      "Shanna Moakler is putting ex-husband Travis Barker and new girlfriend, Kourtney Kardashian through the wringer, accusing the couple of destroying her relationship with her children.\r\nDuring a quick Q… [+1589 chars]",
+  },
+  {
+    source: { id: null, name: "CBS Sports" },
+    author: "",
+    title:
+      "Julio Jones trade rumors: Falcons All-Pro receiver reportedly interested in playing with Cam Newton, Patriots - CBS Sports",
+    description:
+      "Julio Jones trade rumors: Falcons All-Pro receiver reportedly interested in playing with Cam Newton, Patriots",
+    url: "https://www.cbssports.com/nfl/news/julio-jones-trade-rumors-falcons-all-pro-receiver-reportedly-interested-in-playing-with-cam-newton-patriots/",
+    urlToImage:
+      "https://sportshub.cbsistatic.com/i/r/2021/05/20/8fcc1639-0841-42df-861a-82dffd24e020/thumbnail/1200x675/080e5e57d49ff97fbe12e69603733e2e/julio-jones-falcons.jpg",
+    publishedAt: "2021-05-22T17:25:00Z",
+    content:
+      'Just when you thought the Julio Jones rumor mill couldn\'t get much spicier, someone reaches into the pantry and slathers Tabasco all over it. The latest round of "Where Will Julio Land?" now includes… [+4949 chars]',
+  },
+  {
+    source: { id: null, name: "Yahoo Entertainment" },
+    author: "SAMARA LYNN",
+    title:
+      "$500M Mega Millions jackpot ticket sold in Pennsylvania - Yahoo! Voices",
+    description:
+      "A winning Mega Millions ticket from Friday night's drawing, was sold in Pennsylvania with an estimated prize of $515 million, according to a press release...",
+    url: "https://www.yahoo.com/gma/500m-mega-millions-jackpot-ticket-170251612.html",
+    urlToImage:
+      "https://s.yimg.com/uu/api/res/1.2/a4chcrVpmxhDMupJTEfasA--~B/aD00NTY7dz02MDg7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/us.abcnews.go.com/474884af81d06c419706763981c73910",
+    publishedAt: "2021-05-22T17:02:00Z",
+    content:
+      "Someone in the Keystone State is half a billion dollars richer. A winning Mega Millions ticket from Friday night's drawing, was sold in Pennsylvania with an estimated prize of $515 million, according… [+2177 chars]",
+  },
+  {
+    source: { id: "the-verge", name: "The Verge" },
+    author: "Kim Lyons",
+    title:
+      "Virgin Galactic spaceplane VSS Unity completes successful flight - The Verge",
+    description:
+      "Virgin Galactic completed its first successful space flight in more than two years on Saturday, with its crewed VSS Unity spacecraft carried to an altitude of more than 44,000 feet before gliding safely back to Earth.",
+    url: "https://www.theverge.com/2021/5/22/22448928/virgin-galactic-spaceplane-vss-unity-space-branson",
+    urlToImage:
+      "https://cdn.vox-cdn.com/thumbor/n_CwdxxgJToViermBI8GTQcB1cU=/0x31:1600x869/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22533008/Unity21___VSS_Unity_in_space_over_New_Mexico.jpg",
+    publishedAt: "2021-05-22T16:57:33Z",
+    content:
+      "Its the first of four spaceflights the company has planned this year. \r\nVSS Unity in space over New Mexico on May 22nd.\r\nVirgin Galactic\r\nVirgin Galactic completed its first successful space flight i… [+3097 chars]",
+  },
+  {
+    source: { id: "nbc-news", name: "NBC News" },
+    author: "Reuters",
+    title:
+      "Suspect arrested in connection with attack on Jewish man in New York's Times Square - NBC News",
+    description:
+      "A man was arrested in connection with an attack on a Jewish man in New York’s Times Square that was being investigated as a hate crime.",
+    url: "https://www.nbcnews.com/news/us-news/suspect-arrested-connection-attack-jewish-man-new-york-s-times-n1268243",
+    urlToImage:
+      "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2021_20/3476957/210522-nypd-mb-1725.jpg",
+    publishedAt: "2021-05-22T16:52:58Z",
+    content:
+      "NEW YORK (Reuters) - A man was arrested and several others were being sought in connection with an attack on a Jewish man in New Yorks Times Square that drew the attention of several politicians and … [+1929 chars]",
+  },
+  {
+    source: { id: "cnn", name: "CNN" },
+    author: "Aya Elamroussi and Dave Alsup, CNN",
+    title:
+      "New videos show the 4-minute sequence in which Ronald Greene is tased and dragged from his car - CNN ",
+    description:
+      "Newly released videos show the sequence of events that led to the death of Ronald Greene, a Black man, in Louisiana in 2019, offering a graphic account of an encounter with the state police that has drawn fresh attention this week.",
+    url: "https://www.cnn.com/2021/05/22/us/ronald-greene-louisiana-video-saturday/index.html",
+    urlToImage:
+      "https://cdn.cnn.com/cnnnext/dam/assets/201002191309-01-ronald-greene-super-tease.jpg",
+    publishedAt: "2021-05-22T16:33:00Z",
+    content:
+      "(CNN)Newly released videos show the sequence of events that led to the death of Ronald Greene, a Black man, in Louisiana in 2019, offering a graphic account of an encounter with the state police that… [+7300 chars]",
+  },
+  {
+    source: { id: null, name: "NPR" },
+    author: "Lauren Frayer",
+    title:
+      "In Rural India, Less COVID-19 Testing, More Fear — And A Few Ventilators For Millions - NPR",
+    description:
+      "Hospitals are full. Testing is scant. Illiteracy is high. Most deaths are never registered. COVID-19's wrath in rural India is difficult to measure but public health experts are worried.",
+    url: "https://www.npr.org/2021/05/22/998489469/in-rural-india-less-covid-19-testing-more-fear-and-a-few-ventilators-for-million",
+    urlToImage:
+      "https://media.npr.org/assets/img/2021/05/20/gettyimages-1319087357_wide-b7df57ad22f1767a1720ae04d1b43b807bf22775.jpg?s=1400",
+    publishedAt: "2021-05-22T15:51:43Z",
+    content:
+      "Rains have washed away the top layer of sand of shallow graves at a cremation ground on the banks of the Ganges River in Shringverpur, northwest of Allahabad, Uttar Pradesh, India. Coronavirus testin… [+10629 chars]",
+  },
+  {
+    source: { id: "cnn", name: "CNN" },
+    author: "Lindsay Isaac and Eoin McSweeney, CNN",
+    title:
+      "Former BBC boss resigns from prestigious gallery post amid fallout over Diana interview - CNN ",
+    description:
+      "A former BBC director-general has resigned as chairman of London's National Gallery in the fallout from an investigation into a bombshell interview with Princess Diana in 1995.",
+    url: "https://www.cnn.com/2021/05/22/uk/hall-bbc-resignation-diana-gbr-intl/index.html",
+    urlToImage:
+      "https://cdn.cnn.com/cnnnext/dam/assets/210522102928-restricted-file-tony-hall-july-2020-super-tease.jpg",
+    publishedAt: "2021-05-22T15:50:00Z",
+    content: null,
+  },
+  {
+    source: { id: null, name: "NDTV News" },
+    author: null,
+    title:
+      "6-Year-Old, Going To School In Car, Dies In Los Angeles Road-Rage Shooting - NDTV",
+    description:
+      'A six-year-old boy in Los Angeles was killed in a "road rage" incident as he was being driven to school, US media reported, the latest of a growing number of young victims of gun violence in the United States.',
+    url: "https://www.ndtv.com/world-news/los-angeles-6-year-old-going-to-school-in-car-dies-in-us-road-rage-shooting-2447466",
+    urlToImage:
+      "https://i.ndtvimg.com/i/2017-07/police-line-do-not-cross_650x400_51499245674.jpg",
+    publishedAt: "2021-05-22T15:39:12Z",
+    content:
+      'Police shut down the busy 55 Freeway for hours while they investigated (Representational)\r\nLos Angeles: A six-year-old boy in Los Angeles was killed in a "road rage" incident as he was being driven t… [+2209 chars]',
+  },
+  {
+    source: { id: "the-verge", name: "The Verge" },
+    author: "Adi Robertson",
+    title:
+      "Tim Cook’s Fortnite trial testimony was unexpectedly revealing - The Verge",
+    description:
+      "Apple CEO Tim Cook took the stand in the final day of testimony for Epic v. Apple, the antitrust trial over Fortnite and Apple’s iOS App Store.",
+    url: "https://www.theverge.com/2021/5/22/22448139/tim-cook-epic-fortnite-trial-testimony-privacy-iap-antitrust",
+    urlToImage:
+      "https://cdn.vox-cdn.com/thumbor/S_9BAUovtrjGtCNsg7kksiT8Y6g=/0x0:4000x2094/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22532803/1233030839.jpg",
+    publishedAt: "2021-05-22T15:35:56Z",
+    content:
+      "Apple at its most and least idealistic\r\nThe Epic v. Apple trial was bookended by Tims. Epic Games called its CEO Tim Sweeney as the first witness nearly three weeks ago. Yesterday, Apple called Tim C… [+4489 chars]",
+  },
+  {
+    source: { id: "fox-news", name: "Fox News" },
+    author: "Paulina Dedaj",
+    title:
+      "PGA Championship sees brief delay after baby alligator appears on the course - Fox News",
+    description:
+      'The Ocean Course at Kiawah Island, South Carolina, is the site of this year’s PGA Championship, and it has presented some "wild" challenges for the golfers.',
+    url: "https://www.foxnews.com/sports/pga-championship-delay-alligator-course",
+    urlToImage:
+      "https://static.foxnews.com/foxnews.com/content/uploads/2021/05/Gator-PGA-Tour-GETTY.jpg",
+    publishedAt: "2021-05-22T15:25:50Z",
+    content:
+      'The Ocean Course at Kiawah Island, South Carolina, is the site of this years PGA Championship\r\n, and it has presented some "wild" challenges for golfers\r\n. \r\nCameron Tringales sixth hole attempt duri… [+1128 chars]',
+  },
+  {
+    source: { id: "cbs-news", name: "CBS News" },
+    author: null,
+    title:
+      'Blood in suspect\'s car trunk "matched" slain Iowa student Mollie Tibbetts, DNA analyst testifies - CBS News',
+    description:
+      "Cristhian Bahena Rivera, 26, is charged with first-degree murder in Tibbetts' 2018 stabbing death.",
+    url: "https://www.cbsnews.com/news/mollie-tibbetts-death-blood-trunk-cristhian-bahena-rivera-trial/",
+    urlToImage:
+      "https://cbsnews3.cbsistatic.com/hub/i/r/2018/07/24/5cd829ba-250b-49af-a174-b1f57538ef06/thumbnail/1200x630g2/d48042359c003e8fb8356a5ee235b5ad/ap-18205607346837.jpg",
+    publishedAt: "2021-05-22T14:57:44Z",
+    content:
+      "Blood found in the trunk of a farmhand's car was an exact match for a University of Iowa student who was abducted and killed while out for a run in 2018, a DNA analyst told jurors Friday. Tara Scott,… [+4400 chars]",
+  },
+  {
+    source: { id: null, name: "Space.com" },
+    author: "Tariq Malik",
+    title:
+      "China's Zhurong Mars rover rolls onto the Martian surface (photos) - Space.com",
+    description: "China's first Mars rover is driving on the Red Planet.",
+    url: "https://www.space.com/china-mars-rover-zhurong-rolls-on-martian-surface",
+    urlToImage:
+      "https://cdn.mos.cms.futurecdn.net/xHnCmEJ8fiW6qvnTFHjiR3-1200-80.jpg",
+    publishedAt: "2021-05-22T14:48:23Z",
+    content:
+      "China's first rover on Mars, the six-wheeled Zhurong, rolled onto the Red Planet's surface late Friday (May 21) to begin exploring its new home: the vast Martian plain of Utopia Planitia.\r\nZhurong, w… [+2668 chars]",
+  },
+  {
+    source: { id: null, name: "MMA Mania" },
+    author: "Adam Guillen Jr.",
+    title:
+      "UFC Vegas 27 start time, who is fighting tonight at ‘Font vs Garbrandt’ in Las Vegas - MMA Mania",
+    description:
+      "Complete UFC Vegas 27 fight card preview for the Rob Font vs. Cody Garbrandt-led event. Get UFC Vegas 27 start time, location, date, bout order, TV channel, line up and much more.",
+    url: "https://www.mmamania.com/2021/5/22/22446207/ufc-vegas-27-start-time-date-location-tv-channel-font-garbrandt-lineup-las-vegas-espn-mma",
+    urlToImage:
+      "https://cdn.vox-cdn.com/thumbor/xbhMnva1eW7spL9l66pTZRzRWBU=/0x0:4840x2534/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22531770/1319275369.jpg",
+    publishedAt: "2021-05-22T14:45:00Z",
+    content:
+      "Ultimate Fighting Championship (UFC) returns to ESPN+ later tonight (Sat., May 22, 2021) to stage UFC Vegas 27 from inside UFC Apex in Las Vegas, Nevada. The event will feature a Bantamweight bout be… [+11455 chars]",
+  },
+  {
+    source: { id: null, name: "TODAY" },
+    author: "TODAY.com",
+    title:
+      "Prince Harry tells Oprah he turned to drugs, alcohol after mom Diana’s death - Today.com",
+    description:
+      "In the new Apple TV+ docuseries “The Me You Can’t See,” Prince Harry tells Oprah Winfrey that he turned to drugs and alcohol to cope with pain stemming from the death of his mother, Princess Diana. Harry also shared the moment he knew he had to leave the Brit…",
+    url: "https://www.today.com/video/prince-harry-tells-oprah-he-turned-to-drugs-alcohol-after-mom-diana-s-death-112852549762",
+    urlToImage:
+      "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/mpx/2704722219/2021_05/1621686787870_tdy_sat_guad_prince_harry_oprah_210522_1920x1080.jpg",
+    publishedAt: "2021-05-22T14:39:51Z",
+    content: null,
+  },
+  {
+    source: { id: "reuters", name: "Reuters" },
+    author: "Reuters",
+    title: "Musk says he supports crypto in battle with fiat money - Reuters",
+    description:
+      "Tesla Inc (TSLA.O) Chief Executive Officer Elon Musk tweeted on Saturday that in a battle between fiat and cryptocurrencies, his support is with crypto.",
+    url: "https://www.reuters.com/technology/musk-says-he-supports-crypto-battle-with-fiat-money-2021-05-22/",
+    urlToImage:
+      "https://www.reuters.com/resizer/VdHyXRLVaCAr5Dfk3OkD-AQT0IA=/1200x628/smart/cloudfront-us-east-2.images.arcpublishing.com/reuters/JDZLERKEQ5K7XFMBWTMVNLDZE4.jpg",
+    publishedAt: "2021-05-22T14:33:00Z",
+    content:
+      "A representation of virtual currency Bitcoin and U.S. One Dollar banknotes are seen in front of a stock graph in this illustration taken January 8, 2021. REUTERS/Dado RuvicTesla Inc (TSLA.O) Chief Ex… [+1295 chars]",
+  },
+  {
+    source: { id: "associated-press", name: "Associated Press" },
+    author: "Josh Boak",
+    title:
+      "[AP] Biden betting on wage growth, while GOP warns of inflation - The Associated Press",
+    description:
+      "WASHINGTON (AP) — The Biden administration recently gave a bit of simple advice to businesses that are unable to find workers: Offer them more money. This recommendation, included in a White House memo  about the state of the economy, gets at a fundamental te…",
+    url: "https://apnews.com/article/donald-trump-health-coronavirus-pandemic-inflation-business-f12ad357da32e88281d1e132d6899165",
+    urlToImage:
+      "https://storage.googleapis.com/afs-prod/media/16e12567625e4af5a6acf82ace8ff264/3000.jpeg",
+    publishedAt: "2021-05-22T14:25:24Z",
+    content: null,
+  },
+  {
+    source: { id: null, name: "SciTechDaily" },
+    author: null,
+    title:
+      "Super Lunar Event: Supermoon! Red Blood Lunar Eclipse! All Happening at Once – Here's What It Means - SciTechDaily",
+    description:
+      "The first lunar eclipse of 2021 is going to happen during the early hours of May 26. But this is going to be an especially super lunar event, as it will be a supermoon, a lunar eclipse and a red blood moon all at once. So what does this all mean? What’s a sup…",
+    url: "https://scitechdaily.com/super-lunar-event-supermoon-red-blood-lunar-eclipse-all-happening-at-once-heres-what-it-means/",
+    urlToImage: "https://scitechdaily.com/images/Blood-Red-Moon.jpg",
+    publishedAt: "2021-05-22T14:24:55Z",
+    content:
+      "A red blood moon is caused by sunlight passing through the Earth’s atmosphere. Credit: U.S. Navy/Joshua Valcarcel/WikimediaCommons\r\nThe first lunar eclipse of 2021 is going to happen during the early… [+3984 chars]",
+  },
+  {
+    source: { id: null, name: "Page Six" },
+    author: "Jessica Bennett",
+    title:
+      "Kendall Jenner and celeb pals celebrate 818 Tequila amid appropriation backlash - Page Six",
+    description:
+      "The celebration comes shortly after ads for the brand divided social media, with several onlookers accusing Kendall Jenner of cultural appropriation.",
+    url: "https://pagesix.com/2021/05/22/kendall-jenner-and-celeb-pals-celebrate-818-tequila-amid-backlash/",
+    urlToImage:
+      "https://pagesix.com/wp-content/uploads/sites/3/2021/05/kendall-jenner-818-tequila-1.jpg?quality=90&strip=all&w=1200",
+    publishedAt: "2021-05-22T14:15:00Z",
+    content:
+      "Kendall Jenner partied her heart out Friday night in celebration of the launch of her new 818 Tequila, amid backlash that the promo for the brand — and for some, the brand itself — appropriates Mexic… [+2040 chars]",
+  },
+  {
+    source: { id: null, name: "MacRumors" },
+    author: "MacRumors Staff",
+    title:
+      "Top Stories: Apple Music Lossless, M2 MacBook Pro Rumors, Apple Watch Redesign? - MacRumors",
+    description:
+      "Apple continued to clear the decks of non-developer announcements ahead of WWDC this week, not only shipping the new iMac, iPad Pro, and Apple TV...",
+    url: "https://www.macrumors.com/2021/05/22/top-stories-apple-music-lossless/",
+    urlToImage:
+      "https://images.macrumors.com/t/prqQAYbDYtjyivCVHoaXwpP_Ftw=/1920x/https://images.macrumors.com/article-new/2021/05/Top-Stories-51-Feature.jpg",
+    publishedAt: "2021-05-22T13:00:57Z",
+    content:
+      'Apple continued to clear the decks of non-developer announcements ahead of WWDC this week, not only shipping the new iMac, iPad Pro, and Apple TV introduced at last month\'s "Spring Loaded" event but … [+6850 chars]',
+  },
 ];
