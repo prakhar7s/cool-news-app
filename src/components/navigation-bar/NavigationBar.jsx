@@ -8,10 +8,10 @@ import KeyboardArrowRightOutlinedIcon from "@material-ui/icons/KeyboardArrowRigh
 import { NavLink } from "react-router-dom";
 import { NewsContext } from "../../contexts/NewsContext";
 const NavigationBar = () => {
-  const { toggleMode } = useContext(NewsContext);
+  const { darkMode } = useContext(NewsContext);
 
   return (
-    <div className="navigation-bar">
+    <div className={`navigation-bar${darkMode ? " dark-mode" : ""}`}>
       <div className="expand-button">
         <span>Cool News App</span>
         <KeyboardArrowRightOutlinedIcon />
@@ -36,7 +36,6 @@ const NavigationBar = () => {
           <span>Saved Items</span>
         </NavLink>
       </div>
-      <button onClick={toggleMode}>cacas</button>
     </div>
   );
 };

@@ -12,3 +12,17 @@ body {
   overflow-x: hidden;
   font-size: 16px;
 }
+
+:root {
+  --background: #f4f4f4;
+  --cardBg: #ffffff;
+  --primary: #ffffff;
+  --fontColor: #000000;
+  --taskItemBorderColor: rgba(0, 0, 0, 0.15);
+  --borderColor: rgba(0, 0, 0, 0.15);
+  --thinBorder: rgba(0, 0, 0, 0.09);
+  --hover-color: rgb(0, 81, 255);
+  --colorOne: #2980b9;
+  --colorTwo: #2c3e50;
+  --focusColor: #1f1e1e;
+}

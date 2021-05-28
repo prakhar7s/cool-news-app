@@ -1,9 +1,5 @@
-:root {
-  --background: #f5f6f7;
-}
-
 .dark-mode {
-  --background: #121113;
+  --background: #312c38;
 }
 
 .main {
@@ -12,21 +8,7 @@
   background-color: var(--background);
   flex-direction: column;
   align-items: center;
-
-  // YET TO USE
-  button {
-    background: white;
-    background: linear-gradient(90deg, #40bff6 0%, #6e66e0 100%);
-    padding: 15px 45px;
-    outline: none;
-    margin: 40px;
-    border-width: 0;
-    font-size: 17px;
-    color: white;
-    border-radius: 5px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-  }
+  transition: background 0.4s;
 
   .container {
     width: 100%;
@@ -45,7 +27,4 @@
       }
     }
   }
-}
-
-@media only screen and (max-width: 500px) {
 }

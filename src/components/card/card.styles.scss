@@ -1,26 +1,24 @@
-:root {
-  --background: #fff;
-  --primary: #ffffff;
-  --fontColor: #000000;
-  --taskItemBorderColor: rgba(0, 0, 0, 0.4);
-  --borderColor: rgba(0, 0, 0, 0.15);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap");
 .dark-mode {
-  --background: #121113;
+  --background: #121213;
   --primary: #000000;
+  --cardBg: rgb(31, 29, 29);
   --fontColor: #ffffff;
-  --taskItemBorderColor: rgba(255, 255, 255, 0.4);
+  --taskItemBorderColor: rgba(255, 255, 255, 0.1);
   --borderColor: rgba(255, 255, 255, 0.1);
+  --thinBorder: rgba(255, 255, 255, 0.08);
+  --hover-color: rgb(0, 255, 149);
 }
 .card {
   width: 280px;
   min-height: 350px;
   margin: 15px 10px;
-  background-color: var(--background);
-  box-shadow: 0 0 1px 0 var(--taskItemBorderColor);
-  transition: 0.4s all;
+  background-color: var(--cardBg);
+  box-shadow: 0 0 20px 0 var(--taskItemBorderColor);
+  border: 1px solid var(--borderColor);
+  transition: color 1s, background 0.6s;
   color: var(--fontColor);
+  font-family: "IBM Plex Sans", sans-serif;
 
   .img {
     width: 100%;
@@ -48,31 +46,29 @@
   }
 
   .title {
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
-    font-weight: 700;
+    border-bottom: 1px solid var(--thinBorder);
+    font-weight: 500;
     text-decoration: none;
-    color: white;
+    line-height: 22px;
+    color: var(--fontColor);
 
     //to stop overflow
     -webkit-line-clamp: 3;
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
-    height: 62px;
+    height: 72px;
 
     &:hover {
-      // color: rgba(53, 14, 90, 0.9);
+      color: var(--hover-color);
     }
   }
 
   .author {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 300;
     -webkit-line-clamp: 1;
     display: -webkit-box;
     overflow: hidden;
@@ -85,14 +81,16 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 1px solid var(--thinBorder);
 
     .published-at {
       font-size: 16px;
+      opacity: 0.9;
     }
 
     .save-button {
       cursor: pointer;
+      padding-top: 4px;
 
       &.saved {
         .MuiSvgIcon-root {

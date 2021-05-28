@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 
-import "./SavedNews.scss";
+import "../main/main.styles.scss";
 
 import Card from "../card/card.component";
 import { NewsContext } from "../../contexts/NewsContext";
@@ -15,6 +15,7 @@ const SavedNews = () => {
     filterArticlesOnSearch,
     disableLoading,
     isLoading,
+    darkMode,
   } = useContext(NewsContext);
 
   useEffect(() => {
@@ -28,7 +29,7 @@ const SavedNews = () => {
   }, []);
 
   return (
-    <div className="saved-news">
+    <div className={`main${darkMode ? " dark-mode" : ""}`}>
       <div className="container">
         {!isLoading ? (
           filteredSavedNews.length !== 0 && (

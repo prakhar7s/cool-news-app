@@ -13,7 +13,7 @@ const Main = () => {
     resetSearchQuery,
     filterArticlesOnSearch,
     isLoading,
-    disableLoading,
+    darkMode,
   } = useContext(NewsContext);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Main = () => {
   }, []);
 
   return (
-    <main className="main">
+    <main className={`main${darkMode ? " dark-mode" : ""}`}>
       <div className="container">
         {!isLoading ? (
           filteredArticles.length !== 0 && (

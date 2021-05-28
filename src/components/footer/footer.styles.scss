@@ -1,10 +1,21 @@
+.dark-mode {
+  --colorOne: #241d1d;
+  --colorTwo: #131b25;
+  --borderColor: rgba(255, 255, 255, 0.1);
+}
+
 .footer {
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid var(--borderColor);
   width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--colorOne) 100%,
+    var(--colorTwo) 100%
+  );
 
   .links {
     width: 100%;
@@ -21,7 +32,7 @@
 
     a {
       text-decoration: none;
-      color: rgba(25, 25, 218, 0.8);
+      color: rgba(255, 255, 255, 1);
       cursor: pointer;
     }
   }

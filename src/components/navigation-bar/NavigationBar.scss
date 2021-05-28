@@ -1,6 +1,10 @@
+.dark-mode {
+  --borderColor: rgba(255, 255, 255, 0.15);
+}
+
 .navigation-bar {
   background: rgb(93, 31, 238);
-  background: linear-gradient(90deg, #2c2c2c 3%, #000000 100%);
+  background: linear-gradient(90deg, #100d13 3%, #15141b 100%);
   position: fixed;
   left: 0;
   top: 0;
@@ -10,6 +14,7 @@
   color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   z-index: 10;
+  border-right: 1px solid var(--borderColor);
 
   &:hover {
     width: 14rem;
@@ -28,6 +33,7 @@
     bottom: 0;
     width: 100%;
     height: 3.4rem;
+    border-top: 1px solid var(--borderColor);
 
     &:hover {
       width: 100%;
@@ -89,14 +95,14 @@
           content: "";
           width: 100%;
           height: 100%;
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(255, 255, 255, 0.1);
           border-left: 3px solid #fd746c;
           border-top: 1px solid rgba(255, 255, 255, 0.15);
 
           @media only screen and (max-width: 680px) {
             border-bottom: 3px solid #fd746c;
             border-left: none;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.06);
           }
         }
       }
