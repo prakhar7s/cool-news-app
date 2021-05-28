@@ -1,34 +1,56 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Card from "../card/card.component";
-import Loader from "../Loader/Loader";
+import NotFound from "../not-found/NotFound";
 
 import "./main.styles.scss";
-import { MyContext } from "../../MyContext";
+import { NewsContext } from "../../contexts/NewsContext";
+import Loader from "../Loader/Loader";
 
 const Main = () => {
-  return (
-    <MyContext.Consumer>
-      {(value) => (
-        <main className="main">
-          {console.log(value)}
-          <div className="container">
-            {!value.state.isLoading ? (
-              <>
-                <div className="cards">
-                  {value.state.filteredArticles.map((article) => (
-                    <Card key={article.title} article={article} />
-                  ))}
-                </div>
+  const {
+    filteredArticles,
+    changeCurrentTab,
+    resetSearchQuery,
+    filterArticlesOnSearch,
+    isLoading,
+    disableLoading,
+  } = useContext(NewsContext);
 
-                {value.state.noNewsAvailable ? <h1>sdadad</h1> : null}
-              </>
-            ) : (
-              <Loader />
-            )}
-          </div>
-        </main>
-      )}
-    </MyContext.Consumer>
+  useEffect(() => {
+    changeCurrentTab("HOME");
+    resetSearchQuery();
+    filterArticlesOnSearch();
+
+    console.log(isLoading);
+
+    // setTimeout(() => {
+    //   disableLoading();
+    //   console.log("re");
+    // }, 5000);
+  }, []);
+
+  return (
+    <main className="main">
+      <div className="container">
+        {!isLoading ? (
+          filteredArticles.length !== 0 && (
+            <div className="cards">
+              {filteredArticles.map((article) => (
+                <Card
+                  key={article.title}
+                  article={article}
+                  savedNewsCard={false}
+                />
+              ))}
+            </div>
+          )
+        ) : (
+          <Loader />
+        )}
+
+        {filteredArticles.length === 0 && !isLoading && <NotFound />}
+      </div>
+    </main>
   );
 };
 

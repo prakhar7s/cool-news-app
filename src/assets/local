@@ -1,0 +1,156 @@
+  // const [isSaved, setSaved] = useState(false);
+
+  // const fetchFromLocal = (itemName) => {
+  //   const newsID = publishedAt;
+  //   var savedNewsCache = localStorage.getItem(itemName);
+
+  //   savedNewsCache = savedNewsCache != null ? JSON.parse(savedNewsCache) : [];
+  //   const filteredCache = savedNewsCache.filter((id) => id !== newsID);
+
+  //   const isNewsIDPresent = filteredCache.length !== savedNewsCache.length;
+
+  //   return { filteredCache, savedNewsCache, isNewsIDPresent };
+  // };
+
+  // useEffect(() => {
+  //   const { isNewsIDPresent } = fetchFromLocal("savedNewsIDs");
+  //   setSaved(isNewsIDPresent);
+  // }, []);
+
+  // const saveNews = () => {
+  //   const newsID = publishedAt;
+  //   const { filteredCache, isNewsIDPresent } = fetchFromLocal("savedNewsIDs");
+
+  //   // Check whether newsID is present or not
+  //   // if present so add that ID
+  //   if (!isNewsIDPresent) {
+  //     filteredCache.push(newsID);
+  //     setSaved(true);
+  //   } else {
+  //     //it is present so remove that
+  //     setSaved(false);
+  //     setSavedNews(savedNews.filter((sn) => sn.publishedAt !== newsID));
+  //   }
+
+  //   localStorage.setItem("savedNewsIDs", JSON.stringify([...filteredCache]));
+  // };
+
+
+
+
+
+  // const [savedNews, setSavedNews] = useState(value.state.filteredArticles);
+  // const [isLoading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   console.log(value);
+  //   // saved newd IDs
+  //   const savedNewsCache = localStorage.getItem("savedNewsIDs");
+
+  //   if (savedNewsCache !== null) {
+  //     //creating map for better performance
+  //     const news = {};
+  //     const parsedCache = JSON.parse(savedNewsCache);
+  //     parsedCache.forEach((id) => {
+  //       news[id] = true;
+  //     });
+
+  //     // filter saved news for all news
+  //     const savedNewsData = sampleNews
+  //       .filter((n) => (news[n.publishedAt] ? true : false))
+  //       .filter(Boolean);
+
+  //     setSavedNews(savedNewsData);
+  //   } else {
+  //     //no saved news
+  //     setSavedNews([]);
+  //   }
+
+  //   setLoading(false);
+  // }, []);
+
+
+
+
+// setX: (key, value) => {
+//   this.setState({ isLoading: true });
+//   setTimeout(() => {
+//     if (value.length === 0) {
+//       this.setState({
+//         [key]: value,
+//         filteredArticles: this.state.articles,
+//         isLoading: false,
+//         noNewsAvailable: false,
+//       });
+//       return;
+//     }
+
+//     const temp = this.state.articles.filter((news) =>
+//       news.title.toLowerCase().includes(value.toLowerCase())
+//     );
+
+//     this.setState({
+//       [key]: value,
+//       filteredArticles: temp,
+//       isLoading: false,
+//       noNewsAvailable: false,
+//     });
+//     if (temp.length === 0) {
+//       this.setState({
+//         noNewsAvailable: true,
+//       });
+//     }
+//   }, 500);
+// },
+
+
+
+  // toggleSaveNews = (news) => {
+  //   const isAlreadyPresent = this.state.savedNews.some(
+  //     (savedNews) => savedNews.newsID === news.newsID
+  //   );
+
+  //   if (isAlreadyPresent) {
+  //     this.setState({
+  //       savedNews: this.state.savedNews.filter(
+  //         (savedNews) => savedNews.newsID !== news.newsID
+  //       ),
+  //     });
+  //   } else {
+  //     this.setState({ savedNews: [...this.state.savedNews, news] });
+  //   }
+  // };
+
+
+
+
+// setX: (key, value) => {
+//   this.setState({ isLoading: true });
+//   setTimeout(() => {
+//     if (value.length === 0) {
+//       this.setState({
+//         [key]: value,
+//         filteredArticles: this.state.articles,
+//         isLoading: false,
+//         noNewsAvailable: false,
+//       });
+//       return;
+//     }
+
+//     const temp = this.state.articles.filter((news) =>
+//       news.title.toLowerCase().includes(value.toLowerCase())
+//     );
+
+//     this.setState({
+//       [key]: value,
+//       filteredArticles: temp,
+//       isLoading: false,
+//       noNewsAvailable: false,
+//     });
+//     if (temp.length === 0) {
+//       this.setState({
+//         noNewsAvailable: true,
+//       });
+//     }
+//   }, 500);
+// },

@@ -4,7 +4,7 @@ import Footer from "../../components/footer/footer.component";
 import Header from "../../components/header/header.component";
 import Main from "../../components/main/main.component";
 import NavigationBar from "../../components/navigation-bar/NavigationBar";
-import NotFound from "../../components/NotFound/NotFound";
+import NotFound from "../../components/not-found/NotFound";
 import SavedNews from "../../components/SavedNews/SavedNews";
 
 import "./Home.scss";

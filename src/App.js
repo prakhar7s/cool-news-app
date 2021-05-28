@@ -1,14 +1,14 @@
 import "./App.css";
-import MyProvider from "./MyContext";
+import NewsContextProvider from "./contexts/NewsContext";
 import Home from "./pages/home/home.page";
 
 function App() {
   return (
-    <MyProvider>
+    <NewsContextProvider>
       <div className="app">
         <Home />
       </div>
-    </MyProvider>
+    </NewsContextProvider>
   );
 }
 

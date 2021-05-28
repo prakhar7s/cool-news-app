@@ -1,24 +1,27 @@
-import React from "react";
-import { MyContext } from "../../MyContext";
+import React, { useContext } from "react";
+import { NewsContext } from "../../contexts/NewsContext";
 
 import "./header.styles.scss";
 
-const Header = () => {
-  return (
-    <MyContext.Consumer>
-      {(value) => (
-        <header className="header">
-          {console.log(value, "s")}
+// ICONS
+import SearchIcon from "@material-ui/icons/Search";
 
-          <h1 className="main-heading">Cool News App </h1>
-          <input
-            type="text"
-            onChange={(e) => value.setX("searchText", e.target.value)}
-            placeholder="search here!"
-          />
-        </header>
-      )}
-    </MyContext.Consumer>
+const Header = () => {
+  const { filterArticlesOnSearch, query } = useContext(NewsContext);
+
+  return (
+    <header className="header">
+      <h1 className="main-heading">Cool News App </h1>
+      <div className="input-field">
+        <SearchIcon />
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => filterArticlesOnSearch(e.target.value)}
+          placeholder="search here!"
+        />
+      </div>
+    </header>
   );
 };
 
