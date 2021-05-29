@@ -24,7 +24,7 @@ const Header = () => {
           placeholder="search here!"
         />
       </div>
-      <span onClick={toggleMode}>
+      <span style={{ cursor: "pointer" }} onClick={toggleMode}>
         {darkMode ? <WbSunnyTwoToneIcon /> : <NightsStayTwoToneIcon />}
       </span>
     </header>

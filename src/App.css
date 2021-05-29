@@ -22,7 +22,8 @@ body {
   --borderColor: rgba(0, 0, 0, 0.15);
   --thinBorder: rgba(0, 0, 0, 0.09);
   --hover-color: rgb(0, 81, 255);
-  --colorOne: #2980b9;
-  --colorTwo: #2c3e50;
+  --colorOne: #58a3d4;
+  --colorTwo: #1f6ab4;
   --focusColor: #1f1e1e;
+  --iconColor: rgb(255, 0, 0);
 }

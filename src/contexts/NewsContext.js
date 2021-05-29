@@ -18,12 +18,14 @@ class NewsContextProvider extends Component {
       currentTab: "HOME",
       query: "",
       isLoading: true,
-      darkMode: true,
+      darkMode: cached.darkMode,
     };
   }
 
   toggleMode = () => {
-    this.setState({ darkMode: !this.state.darkMode });
+    this.setState({ darkMode: !this.state.darkMode }, () =>
+      this.updateCache(this.state)
+    );
   };
 
   disableLoading = () => {
@@ -41,13 +43,18 @@ class NewsContextProvider extends Component {
   updateCache = () => {
     localStorage.setItem(
       "coolNewsApp",
-      JSON.stringify({ savedNews: this.state.savedNews })
+      JSON.stringify({
+        savedNews: this.state.savedNews,
+        darkMode: this.state.darkMode,
+      })
     );
   };
 
   getCache = () => {
     const data = localStorage.getItem("coolNewsApp");
-    return data != undefined ? { ...JSON.parse(data) } : { savedNews: [] };
+    return data != undefined
+      ? { ...JSON.parse(data) }
+      : { savedNews: [], darkMode: true };
   };
 
   toggleSaveNews = (news) => {
@@ -100,6 +107,7 @@ class NewsContextProvider extends Component {
 
       return;
     }
+
     const temp = this.state[articles].filter((article) => {
       return (
         article.title.toLowerCase().includes(query.toLowerCase()) ||
@@ -108,6 +116,11 @@ class NewsContextProvider extends Component {
     });
 
     this.setState({ [filteredArticles]: temp, query });
+
+    if (this.state[filteredArticles].length === 0) {
+      this.disableLoading();
+      return;
+    }
 
     setTimeout(() => {
       this.disableLoading();
