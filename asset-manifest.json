@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/cool-news-app/static/css/main.7af4d314.chunk.css",
-    "main.js": "/cool-news-app/static/js/main.9ece88a4.chunk.js",
-    "main.js.map": "/cool-news-app/static/js/main.9ece88a4.chunk.js.map",
-    "runtime-main.js": "/cool-news-app/static/js/runtime-main.33b45dd3.js",
-    "runtime-main.js.map": "/cool-news-app/static/js/runtime-main.33b45dd3.js.map",
-    "static/js/2.2c583e9f.chunk.js": "/cool-news-app/static/js/2.2c583e9f.chunk.js",
-    "static/js/2.2c583e9f.chunk.js.map": "/cool-news-app/static/js/2.2c583e9f.chunk.js.map",
-    "static/js/3.ae92e878.chunk.js": "/cool-news-app/static/js/3.ae92e878.chunk.js",
-    "static/js/3.ae92e878.chunk.js.map": "/cool-news-app/static/js/3.ae92e878.chunk.js.map",
+    "main.css": "/cool-news-app/static/css/main.f87755be.chunk.css",
+    "main.js": "/cool-news-app/static/js/main.2af99bb3.chunk.js",
+    "main.js.map": "/cool-news-app/static/js/main.2af99bb3.chunk.js.map",
+    "runtime-main.js": "/cool-news-app/static/js/runtime-main.322902f7.js",
+    "runtime-main.js.map": "/cool-news-app/static/js/runtime-main.322902f7.js.map",
+    "static/js/2.23339a17.chunk.js": "/cool-news-app/static/js/2.23339a17.chunk.js",
+    "static/js/2.23339a17.chunk.js.map": "/cool-news-app/static/js/2.23339a17.chunk.js.map",
+    "static/js/3.ff4a3b14.chunk.js": "/cool-news-app/static/js/3.ff4a3b14.chunk.js",
+    "static/js/3.ff4a3b14.chunk.js.map": "/cool-news-app/static/js/3.ff4a3b14.chunk.js.map",
     "index.html": "/cool-news-app/index.html",
-    "static/css/main.7af4d314.chunk.css.map": "/cool-news-app/static/css/main.7af4d314.chunk.css.map",
-    "static/js/2.2c583e9f.chunk.js.LICENSE.txt": "/cool-news-app/static/js/2.2c583e9f.chunk.js.LICENSE.txt"
+    "static/css/main.f87755be.chunk.css.map": "/cool-news-app/static/css/main.f87755be.chunk.css.map",
+    "static/js/2.23339a17.chunk.js.LICENSE.txt": "/cool-news-app/static/js/2.23339a17.chunk.js.LICENSE.txt",
+    "static/media/data-not-found.3f1838d0.svg": "/cool-news-app/static/media/data-not-found.3f1838d0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.33b45dd3.js",
-    "static/js/2.2c583e9f.chunk.js",
-    "static/css/main.7af4d314.chunk.css",
-    "static/js/main.9ece88a4.chunk.js"
+    "static/js/runtime-main.322902f7.js",
+    "static/js/2.23339a17.chunk.js",
+    "static/css/main.f87755be.chunk.css",
+    "static/js/main.2af99bb3.chunk.js"
   ]
 }
