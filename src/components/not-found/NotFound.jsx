@@ -12,9 +12,9 @@ const NotFound = ({ savedNewsTemplate }) => {
     <div className={`not-found${darkMode ? " dark-mode" : ""}`}>
       <DataNotFound className="data-not-found" />
       {!savedNewsTemplate ? (
-        <p>No articles related to searched words</p>
+        <p>No articles related to searched words :(</p>
       ) : (
-        <p>No saved articles related to searched words</p>
+        <p>No saved articles related to searched words :(</p>
       )}
     </div>
   );
